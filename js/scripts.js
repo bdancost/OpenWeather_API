@@ -104,6 +104,8 @@ searchBtn.addEventListener("click", async (e) => {
   const city = cityInput.value;
 
   showWeatherData(city);
+
+  cityInput.value = "";
 });
 
 cityInput.addEventListener("keyup", (e) => {
@@ -111,6 +113,8 @@ cityInput.addEventListener("keyup", (e) => {
     const city = e.target.value;
 
     showWeatherData(city);
+
+    cityInput.value = "";
   }
 });
 
